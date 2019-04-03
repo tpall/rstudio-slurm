@@ -37,6 +37,8 @@ Start Rstudio server as a regular slurm job with `sbatch` command. Note the jobi
 sbatch rstudio-server.sh
 ```
 
+Note: edit SBATCH lines in `rstudio-server.sh` file to specify time, memory etc limits or partition name.
+
 Output will be something like this:
 ```
 [tpall@hpc-cluster rstudio-slurm]$ sbatch rstudio-server.sh
