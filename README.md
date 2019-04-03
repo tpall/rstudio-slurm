@@ -23,9 +23,11 @@ module purge
 
 2. Get this repository.
 
+Clone this repo to *Projects* folder in user home directory (choose any other folder where you want to keep this repo). 
 ```bash
-cd ~/Projects (or Downloads or whatever other folder where you want to keep this repo)
-git clone 
+cd ~/Projects
+git clone git@github.com:tpall/rstudio-slurm.git
+cd rstudio-slurm
 ```
 
 3. Start Rstudio server.
