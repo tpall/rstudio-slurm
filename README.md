@@ -13,7 +13,7 @@ cd ~/simg
 Load singularity module and download the pre-built image from Singularity Hub:
 ```bash
 module load singularity
-singularity pull --name singularity-rstudio.simg shub://tpall/singularity-rstudio
+singularity pull --name singularity-rstudio.simg shub://tpall/singularity-tidyverse
 ```
 
 (Optional) now you can unload singularity module.
