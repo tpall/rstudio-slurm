@@ -3,7 +3,7 @@
 #SBATCH --partition=main
 #SBATCH --time=08:00:00
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=2
+#SBATCH --cpus-per-task=1
 #SBATCH --mem=16000
 #SBATCH --output=slurm_%j.out
 #SBATCH --signal=USR2
