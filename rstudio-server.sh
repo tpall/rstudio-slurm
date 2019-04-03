@@ -10,7 +10,6 @@
 
 module load singularity
 export RSTUDIO_PASSWORD=$(openssl rand -base64 15)
-export R_LIBS_USER='/gpfs/hpchome/taavi74/Projects/geo-rnaseq/.snakemake/conda/3936ea39/lib/R/library'
 
 # get unused socket per https://unix.stackexchange.com/a/132524
 # tiny race condition between the python & singularity commands
