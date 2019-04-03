@@ -5,7 +5,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=16000
-#SBATCH --output=rserver.job.%j
+#SBATCH --output=slurm_%j.out
 #SBATCH --signal=USR2
 
 module load singularity
@@ -18,7 +18,7 @@ readonly PORT=$(python -c 'import socket; s=socket.socket(); s.bind(("", 0)); pr
 cat 1>&2 <<END
 1. SSH tunnel from your workstation using the following command:
 
-   ssh -N -L 8787:${HOSTNAME}:${PORT} ${USER}@${SLURM_SUBMIT_HOST}
+   ssh -N -L 8787:${HOSTNAME}:${PORT} ${USER}@${SLURM_SUBMIT_HOST}.$(dnsdomainname)
 
    and point your web browser to http://localhost:8787
 
