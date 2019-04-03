@@ -2,6 +2,8 @@
 
 **In slurm cluster**
 
+1. Get Rstudio singularity image
+
 Create directory for singularity images and go into that directory:
 ```bash
 mkdir ~/simg
@@ -13,6 +15,20 @@ Load singularity module and download the pre-built image from Singularity Hub:
 module load singularity
 singularity pull --name singularity-rstudio.simg shub://tpall/singularity-rstudio
 ```
+
+(Optional) now you can unload singularity module.
+```bash
+module purge
+```
+
+2. Get this repository.
+
+```bash
+cd ~/Projects (or Downloads or whatever other folder where you want to keep this repo)
+git clone 
+```
+
+3. Start Rstudio server.
 
 Start Rstudio server as a regular slurm job. Note the jobid printed to terminal.
 ```bash
@@ -26,6 +42,8 @@ less -F slurm_jobid.out
 
 **In your computer**
 
-Follow instructions in slurm log.
+4. Start using Rstudio from your computer.
+
+Start new terminal and go to web browser. Follow instructions in slurm log.
 
 
