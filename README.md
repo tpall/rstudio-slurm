@@ -32,12 +32,18 @@ cd rstudio-slurm
 
 3. Start Rstudio server.
 
-Start Rstudio server as a regular slurm job. Note the jobid printed to terminal.
+Start Rstudio server as a regular slurm job with `sbatch` command. Note the jobid printed to terminal.
 ```bash
 sbatch rstudio-server.sh
 ```
 
-Print slurm log with instructions how to start SSH tunnel and login password. Replace *jobid* with your jobid.
+Output will be something like this:
+```
+[tpall@hpc-cluster rstudio-slurm]$ sbatch rstudio-server.sh
+Submitted batch job 5799356
+```
+
+Print slurm log with instructions how to start SSH tunnel and login password. Replace *jobid* with your batch jobid.
 ```bash
 less -F slurm_jobid.out
 ```
