@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #SBATCH --job-name=rstudio-server
 #SBATCH --partition=main
 #SBATCH --time=08:00:00
